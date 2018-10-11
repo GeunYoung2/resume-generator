@@ -28,7 +28,7 @@ ifeq ($(WINDOWS),yes)
 else
    mkdir = mkdir -p $(1)
    cp = cp -r $(1)
-   rm = rm -r $(1) > /dev/null 2>&1 || true
+   rm = rm -rf $(1) > /dev/null 2>&1 || true
    rmdir = rmdir $(1) > /dev/null 2>&1 || true
    echo = echo "$(1)"
    phantomjs = phantomjs $(1)
