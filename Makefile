@@ -65,8 +65,8 @@ deploy:
 	@echo "Cleaning $(BUILD_DIR)"
 	pandoc --section-divs -s ./content/resume.md -H ./templates/header.html -c static/resume.css -o index.html
 	git checkout ${DEPLOY_BRANCH}
-	$(call rmdir, $(DEPLOY_DELETE_DIRS))
-	$(call rm, $(DEPLOY_DELETE_FILES))
+	$(call rmdir,$(DEPLOY_DELETE_DIRS))
+	$(call rm,$(DEPLOY_DELETE_FILES))
 	-git add index.html static
 	-git add -u
 	-git commit -m 'Automatic build commit on $(DATE).'
