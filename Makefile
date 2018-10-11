@@ -6,7 +6,7 @@ HTML_DIR = $(OUPUT_DIR)/html/
 PDF_DIR = $(OUPUT_DIR)/pdf/
 DEPLOY_BRANCH = gh-pages
 DEPLOY_DELETE_DIRS = out/ content/ bin/ templates/
-DEPLOY_DELETE_FILES = installation.md Makefile README.md LICENSE.md installation_ko.md
+DEPLOY_DELETE_FILES = Makefile README.md LICENSE.md installation_ko.md
 ifndef CURRENT_BRANCH
 CURRENT_BRANCH = $(error Could not get current branch.)
 endif
